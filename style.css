@@ -43,7 +43,7 @@ header h2 {
 
 header p {
     font-size: 11px;
-    line-height: 1.5;
+    line-height: 1.3;
     margin: 0;
 }
 
@@ -54,7 +54,7 @@ header a {
 
 /* Secciones */
 section {
-    margin-top: 22px;
+    margin-top: 14px;
 }
 
 section h3 {
@@ -70,22 +70,22 @@ section h3 {
 section p,
 section li {
     font-size: 11px;
-    line-height: 1.55;
+    line-height: 1.33;
     margin: 0;
 }
 
 ul {
-    padding-left: 16px;
-    margin: 6px 0 0;
+    padding-left: 14px;
+    margin: 4px 0 0;
 }
 
 li {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 /* Experiencia */
 .job {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 .job-header {
@@ -98,7 +98,7 @@ li {
 .job-sub {
     font-size: 10.5px;
     color: var(--muted);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 /* Skills */
@@ -157,4 +157,63 @@ li {
 .contact a {
     color: inherit;
     text-decoration: none;
+}
+
+
+.tooltip-job {
+position: relative;
+}
+
+.job-preview {
+    margin: 4px 0 0;
+    padding-left: 14px; /* igual que ul */
+    cursor: help;
+    margin-top: 0.4rem;
+    cursor: help;
+}
+
+.job-preview li {
+    font-size: 11px;
+    line-height: 1.33;
+    margin-bottom: 2px;
+    color: var(--text);
+}
+
+/* Tooltip */
+.tooltip-content {
+position: absolute;
+top: 100%;
+left: 0;
+width: 520px;
+max-width: 90vw;
+background: #111827;
+color: #e5e7eb;
+border-radius: 10px;
+padding: 1rem;
+margin-top: 0.5rem;
+box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+opacity: 0;
+visibility: hidden;
+transform: translateY(6px);
+transition: all 0.2s ease;
+z-index: 10;
+}
+
+.tooltip-content ul {
+margin: 0;
+padding-left: 1.2rem;
+font-size: 0.9rem;
+line-height: 1.4;
+}
+
+.tooltip-content li {
+margin-bottom: 0.4rem;
+}
+
+/* Mostrar tooltip */
+.tooltip-job:hover .tooltip-content,
+.tooltip-job:focus-within .tooltip-content {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
 }
