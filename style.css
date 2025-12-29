@@ -115,14 +115,17 @@ li {
 
 /* Print */
 @media print {
+    body {
+        background: #fff;
+    }
+
     .cv {
         width: auto;
         min-height: auto;
         margin: 0;
-        padding: 20mm;
+        padding: 0;
     }
 }
-
 
 .contact {
     display: flex;
@@ -216,4 +219,10 @@ margin-bottom: 0.4rem;
 opacity: 1;
 visibility: visible;
 transform: translateY(0);
+}
+
+
+@page {
+    size: letter;
+    margin: 20mm;
 }
