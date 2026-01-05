@@ -1,5 +1,6 @@
 :root {
     --text: #1f2937;
+    --Resaltador: var(--color-progressive,#36c);
     --muted: #6b7280;
     --line: #e5e7eb;
 }
@@ -173,14 +174,18 @@ position: relative;
     cursor: help;
     margin-top: 0.4rem;
     cursor: help;
+
 }
 
 .job-preview li {
     font-size: 11px;
     line-height: 1.33;
     margin-bottom: 2px;
-    color: var(--text);
+    color: var(--Resaltador);
+
 }
+
+
 
 /* Tooltip */
 .tooltip-content {
