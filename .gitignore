@@ -1,3 +1,16 @@
+# Herramientas y auditoría: solo uso local.
 /.local-tools/
-/.agents/skills/career-ops/
+/.agents/
 /auditoria-local/
+
+# Versiones alternativas, generadores y documentos creados localmente.
+/ats-*.html
+/build-resumes.mjs
+/output/
+
+# Foto personal: archivo local.
+/assets/foto-perfil.*
+
+/certificaciones.json
+
+/cv-*.html

@@ -13,16 +13,17 @@
   <nav class="site-nav" aria-label="Secciones del CV">
     <a class="nav-brand" href="#inicio">FJCM / CV</a>
     <div class="nav-links">
-      <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#habilidades">Habilidades</a><a href="#educacion">Educación</a>
-      <button type="button" id="print-cv">Imprimir / PDF</button>
+      <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#habilidades">Habilidades</a><a href="#educacion">Educación</a>
+      <button type="button" id="print-cv">Imprimir web</button>
     </div>
   </nav>
   <main class="cv">
 
-    <header id="inicio"><p class="eyebrow">Currículum profesional</p>
+    <div class="cv-heading" id="inicio"><div class="portrait-frame"><img class="cv-photo" src="assets/foto-perfil.jpg" alt="Foto de Francisco Javier Cervantes Mendieta" width="144" height="172"></div><p class="eyebrow">Currículum profesional</p>
       <h1>Francisco Javier Cervantes Mendieta</h1>
-      <h2>Analista de Datos | Desarrollo de Automatizaciones | Python y SQL</h2>
+      <h2>Analista de Datos | Desarrollo de Software | Automatización e Integraciones</h2>
       <p class="contact">
+        <span class="contact-item" data-phone>Teléfono: 5630150637</span>
         <span class="contact-item">
           <span class="icon-circle">
             <i class="fa-solid fa-envelope"></i>
@@ -51,12 +52,12 @@
           <a href="https://portal-web-sandy.vercel.app/">Portfolio Web</a>
         </span>
       </p>
-    </header>
+    </div>
 
     <section id="perfil"><h3><i class="fa-solid fa-user" aria-hidden="true"></i> Perfil profesional</h3>
       <p>
         Analista de datos y desarrollador de automatizaciones con experiencia en UTEL desde diciembre de 2023.
-        Desarrollo pipelines ETL, reportes e integraciones con Python, SQL y APIs REST para consolidar información
+        Desarrollo pipelines ETL, reportes e integraciones con Python y APIs REST para consolidar información
         académica y operativa. Construyo dashboards y herramientas internas para facilitar el seguimiento de indicadores
         y la operación de los equipos. Mi trayectoria en soporte técnico, redes y sistemas complementa el diagnóstico
         de incidencias y el desarrollo de soluciones. Certificado en Oracle Cloud Infrastructure Foundations Associate.
@@ -77,7 +78,7 @@
 
         <ul>
           <li>Desarrollo de <strong>pipelines ETL con Python y Pandas</strong> para extraer, limpiar, validar y consolidar datos académicos y operativos de múltiples plataformas, como base para reportes e indicadores.</li>
-          <li>Automatización de la <strong>descarga de reportes con Playwright</strong> y de su procesamiento y exportación a Excel y CSV con Python y OpenPyXL, para reducir tareas manuales en la preparación de información periódica.</li>
+          <li>Automatización de la <strong>descarga de reportes con Playwright</strong> y de su procesamiento y exportación a Excel y CSV con Python y OpenPyXL, para preparar información periódica mediante un flujo de tareas iniciado desde CMD.</li>
           <li>Integración de <strong>APIs REST</strong> para intercambiar información entre servicios internos, gestionando autenticación, peticiones HTTP y procesamiento de respuestas JSON; validación de endpoints y sesiones con Postman.</li>
           <li>Implementación de <strong>notificaciones automáticas por Telegram y WhatsApp</strong>, conectando procesos en Python con servicios en Node.js y APIs para comunicar resultados, errores y estados de ejecución.</li>
           <li>Desarrollo y mantenimiento de <strong>dashboards ejecutivos en Django</strong> para consultar KPIs académicos, administrativos y operativos; participación en su migración a una interfaz con <strong>Astro, JavaScript y TailwindCSS</strong>.</li>
@@ -124,7 +125,7 @@
           <span>Prácticas Profesionales — Estructuras Triángulo S.A.</span>
           <span>05/2018 – 07/2018</span>
         </div>
-        <div class="job-sub">San Sebastian, Zumpango, Méx</div>
+        <div class="job-sub">San Sebastián, Zumpango, Méx</div>
         <ul>
           <li>Realización de <strong>mantenimiento preventivo de equipos de cómputo</strong>, orientado a conservar su funcionamiento y apoyar las actividades de los usuarios.</li>
           <li>Actualización de <strong>software y firmware</strong> como parte de las tareas de mantenimiento y puesta al día de los equipos.</li>
@@ -138,7 +139,7 @@
           <span>Asistente de Soporte Técnico — Desarrolladora de Obras Inmobiliarias</span>
           <span>01/2018 – 08/2018</span>
         </div>
-        <div class="job-sub">Ojo de Agua, Tecamac, Méx</div>
+        <div class="job-sub">Ojo de Agua, Tecámac, Méx</div>
         <ul>
           <li>Instalación y configuración de <strong>equipos de cómputo y periféricos</strong> para su uso en las actividades diarias de los usuarios internos.</li>
           <li>Atención de <strong>solicitudes de soporte técnico básico</strong>, apoyando a los usuarios en la resolución de problemas de funcionamiento y uso de sus equipos.</li>
@@ -161,36 +162,28 @@
       </div>
     </section>
 
-        <section class="skills" id="habilidades">
-      <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Habilidades técnicas</h3>
+        <section id="proyectos">
+      <h3><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Proyectos destacados en UTEL</h3>
+      <div class="project"><h4>Consolidación y reportes operativos</h4><p>Desarrollo de flujos ETL para integrar datos de distintas plataformas y producir archivos Excel y CSV. Automatización de descargas con Playwright y procesamiento con Python, Pandas y OpenPyXL.</p></div>
+      <div class="project"><h4>Dashboards para seguimiento de indicadores</h4><p>Desarrollo y mantenimiento de dashboards en Django para consultar KPIs. Participación en la migración de la interfaz a Astro, JavaScript y TailwindCSS.</p></div>
+      <div class="project"><h4>Integraciones y notificaciones de ejecución</h4><p>Integración de APIs REST y servicios en Python y Node.js para comunicar resultados, errores y estados de ejecución mediante Telegram y WhatsApp.</p></div>
+    </section>
 
+    <section class="skills" id="habilidades">
+      <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Habilidades técnicas</h3>
       <div class="skills-grid">
-        <p><strong>Lenguajes:</strong> Python, SQL, JavaScript, C, C++, Java, Bash (básico)</p>
-        <p><strong>Análisis de Datos:</strong> Pandas, NumPy, ETL, EDA, Limpieza y Transformación de Datos, Feature Engineering</p>
-        <p><strong>Visualización:</strong> Matplotlib, Power BI (básico), Dashboards Ejecutivos, KPIs Operativos, Performance y Ventas</p>
-        <p><strong>Machine Learning:</strong> Scikit-learn, Modelos Supervisados, Clasificación, Regresión, Validación de Modelos</p>
-        <p><strong>Bases de Datos:</strong> MySQL, PostgreSQL, Manejo de Datasets</p>
-        <p><strong>Backend:</strong> Django, Node.js, APIs REST, Integración de Servicios, Automatización Backend</p>
-        <p><strong>Frontend:</strong> HTML5, CSS3, Astro, TailwindCSS, Vite</p>
-        <p><strong>Automatización:</strong> Python, Selenium, Playwright, Web Scraping, Pipelines de tareas automatizadas con Python iniciados desde CMD, Reportes Excel y CSV con OpenPyXL, Manejo de Procesos, Logs, Timeouts, Recuperación de Errores</p>
-        <p><strong>APIs e Integraciones:</strong> Google Drive API, Google Sheets API, Google Apps Script, Telegram API, Integración con WhatsApp, Google Chat Webhooks, Autenticación de APIs, Procesamiento de JSON</p>
-        <p><strong>Plataformas:</strong> InConcert (personalización de formularios e integraciones), Oracle APEX, AWS (fundamentos), Docker (básico), Linux</p>
-        <p><strong>Herramientas:</strong> Git, GitHub, VS Code, Jupyter Notebook, Postman, Chrome DevTools, npm, ClickUp, Jira, Trello, Figma</p>
-        <p><strong>Terminal y Línea de Comandos:</strong> Bash (básico), Navegación y Manipulación de Archivos, Búsquedas con grep y find, Redirecciones y Encadenamiento de Comandos</p>
-        <p><strong>Metodologías:</strong> Trabajo Ágil, Resolución de Problemas, Desarrollo Orientado a Datos</p>
-    </div>
+        <p><strong>Datos y reportes:</strong> Python, Pandas, NumPy, ETL, limpieza, validación y consolidación de datos, OpenPyXL, Excel y CSV, Matplotlib.</p>
+        <p><strong>Automatización:</strong> Playwright, Selenium, web scraping, pipelines de tareas con Python iniciados desde CMD, procesos, logs, timeouts y recuperación de errores.</p>
+        <p><strong>APIs e integraciones:</strong> APIs REST, autenticación, HTTP y JSON, Google Drive API, Google Sheets API, Google Apps Script, Telegram, integración con WhatsApp y Google Chat Webhooks.</p>
+        <p><strong>Desarrollo web:</strong> Django, Node.js, JavaScript, HTML5, CSS3, Astro, TailwindCSS, Vite, personalización de formularios en InConcert.</p>
+        <p><strong>Herramientas de trabajo:</strong> Git, GitHub, Postman, Chrome DevTools, VS Code, Jupyter Notebook, npm, Jira y ClickUp.</p>
+        <p><strong>SQL y bases de datos:</strong> SQL, MySQL, PostgreSQL; formación en modelado de datos, procedimientos almacenados, optimización y seguridad con MySQL.</p>
+        <p><strong>Conocimientos básicos:</strong> Bash y línea de comandos, búsquedas con grep y find, redirecciones y encadenamiento de comandos; Power BI y Docker.</p>
+        <p><strong>Conocimientos complementarios:</strong> EDA, feature engineering, Scikit-learn, clasificación, regresión y validación de modelos; C, C++, Java, Linux, AWS y Oracle APEX; Trello y Figma.</p>
+      </div>
     </section>
 
     <section id="educacion"><h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Educación</h3>
-
-      <div class="job">
-        <div class="job-header">
-          <span>ONE – Oracle Next Education</span>
-          <span>01/2025 – 12/2025</span>
-        </div>
-        <div class="job-sub">Programa de formación en tecnología</div>
-        
-      </div>
 
       <div class="job">
         <div class="job-header">
@@ -215,7 +208,7 @@
       <div class="job">
         <div class="job-header">
           <span>Oracle Next Education (ONE) – Alura Latam</span>
-          <span>01/2025 – 11/2025</span>
+          <span>2025</span>
         </div>
 
         <div class="job-sub">
@@ -273,16 +266,14 @@
           Certification Exams – OCI Foundations Associate 2025
         </div>
       </div>
-
-      <div class="job">
-        <div class="job-header">
-          <span>Curso de Introducción a la Terminal y Línea de Comandos</span>
-        </div>
-        <div class="job-sub">Nivel básico · 26 clases · 4 horas de contenido y 14 horas de práctica</div>
-        <ul>
-          <li>Formación en terminal y Bash: navegación y manipulación de archivos y directorios, búsqueda con grep y find, redirecciones y operadores para encadenar comandos.</li>
-        </ul>
-      </div>
+          <div class="job certification"><div class="job-header"><span>ONE | Inmersi&#243;n: Agentes de IA para Negocios</span><span>10/2026</span></div><div class="job-sub">Alura Latam</div><p class="credential-id">ID de la credencial: 04c1c5b4-cdfb-4cd1-b791-9276024f994b</p></div>
+      <div class="job certification"><div class="job-header"><span>Curso de Introducci&#243;n a la Terminal y L&#237;nea de Comandos</span><span>09/2026</span></div><div class="job-sub">Platzi</div><p class="credential-id">ID de la credencial: 41c34bb9-6815-462b-bb70-d62b8c89db70</p></div>
+      <div class="job certification"><div class="job-header"><span>Programa ONE Tech Advanced</span><span>11/2025</span></div><div class="job-sub">Alura Latam</div><p class="credential-id">ID de la credencial: 47dcd288-446f-410d-89a2-11f3c4f7abd8</p></div>
+      <div class="job certification"><div class="job-header"><span>Programa ONE Tech Foundation G8 - Data Science</span><span>08/2025</span></div><div class="job-sub">Alura Latam</div><p class="credential-id">ID de la credencial: 8eba2ecb-1c20-4df4-a5fa-5c88323fc5ed</p></div>
+      <div class="job certification"><div class="job-header"><span>Curso de Introducci&#243;n a AWS: Redes, Gobernanza y Machine Learning</span><span>08/2024</span></div><div class="job-sub">Platzi</div><p class="credential-id">ID de la credencial: 0312e5ef-8d45-4caf-9860-9e0721f788e7-a5167d90-2726-41b7-acf6-9a6427fc12ab</p></div>
+      <div class="job certification"><div class="job-header"><span>Curso de Introducci&#243;n a AWS: C&#243;mputo, Almacenamiento y Bases de Datos</span><span>07/2024</span></div><div class="job-sub">Platzi</div><p class="credential-id">ID de la credencial: 80987a3a-4432-4495-8f58-0763b17cac50</p></div>
+      <div class="job certification"><div class="job-header"><span>Curso de Automatizaci&#243;n de Test con Playwright</span><span>07/2024</span></div><div class="job-sub">Platzi</div><p class="credential-id">ID de la credencial: 20064927-8566-4c0f-a0d3-e6cd77ff4026-f4264e89-5b57-408f-8833-7cecfee2accd</p></div>
+      <div class="job certification"><div class="job-header"><span>Curso de Introducci&#243;n a AWS: Fundamentos de Cloud Computing</span><span>06/2024</span></div><div class="job-sub">Platzi</div><p class="credential-id">ID de la credencial: a19150e0-89f7-4f4e-85ae-a3e0927a066c-22978eab-f4bf-4c8e3d33c1e3</p></div>
     </section>
 
     <section>

@@ -12,12 +12,13 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--coral); outline
 button { border: 1px solid var(--accent); border-radius: 5px; padding: 9px 13px; background: var(--accent); color: white; font: inherit; font-size: 12px; cursor: pointer; }
 button:hover { background: #193e5e; }
 .cv { max-width: 1040px; margin: 40px auto; padding: 56px 64px; background: white; border: 1px solid var(--line); border-top: 4px solid var(--accent); }
-header { padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.cv-heading { padding-bottom: 30px; border-bottom: 1px solid var(--line); }
 .eyebrow { margin: 0 0 18px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 h1 { max-width: 800px; margin: 0; color: #18364e; font-size: clamp(28px, 4vw, 42px); font-weight: 300; line-height: 1.2; letter-spacing: -1px; }
 h2 { margin: 15px 0 22px; font-size: 17px; font-weight: 400; line-height: 1.6; color: var(--muted); }
 .contact { display: flex; flex-wrap: wrap; gap: 14px 24px; margin: 0; }
 .contact-item { display: inline-flex; gap: 8px; align-items: center; font-size: 12px; overflow-wrap: anywhere; }
+.contact-item[data-phone] { color: var(--accent); }
 .contact a { text-decoration: none; }
 .contact a:hover { text-decoration: underline; }
 .icon-circle { color: var(--accent); }
@@ -56,7 +57,7 @@ strong { font-weight: 600; }
   body { background: white; color: #111; }
   .site-nav { display: none; }
   .cv { max-width: none; margin: 0; padding: 0; border: 0; }
-  header { padding-bottom: 14px; }
+  .cv-heading { padding-bottom: 14px; }
   .eyebrow { margin-bottom: 8px; font-size: 9px; }
   h1 { font-size: 25px; }
   h2 { font-size: 12px; margin: 8px 0 12px; }
@@ -76,3 +77,16 @@ strong { font-weight: 600; }
   .languages { font-size: 10px; }
   a { color: inherit; text-decoration: none; }
 }
+.nav-links { flex-wrap: wrap; justify-content: flex-end; gap: 12px 18px; }
+.site-nav { align-items: flex-start; }
+.project { margin-bottom: 18px; }
+.project h4 { font-size: 14px; margin: 0 0 6px; color: var(--accent); }
+@media print { .skills-grid { display: block; } .skills-grid p { margin-bottom: 8px; } .project { break-inside: avoid; } }
+
+/* Encuadre de la foto original, sin modificar el archivo. */
+.cv-heading { display: flow-root; }
+.portrait-frame { float: right; width: 144px; height: 172px; margin: 0 0 18px 26px; overflow: hidden; border-radius: 10px; border: 1px solid var(--line); }
+.cv-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 35% 37%; transform: scale(1.65); transform-origin: 35% 37%; }
+@media (max-width: 600px) { .portrait-frame { float: none; margin: 0 0 22px; width: 120px; height: 144px; } }
+@media print { .portrait-frame { float: right; width: 88px; height: 106px; margin: 0 0 12px 18px; } }
+.credential-id { overflow-wrap: anywhere; color: var(--muted); font-size: 11px; }
