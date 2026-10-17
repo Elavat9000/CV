@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <title>Francisco Javier Cervantes Mendieta | Analista de Datos y Automatización</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>  
+<body>
+  <nav class="site-nav" aria-label="Secciones del CV">
+    <a class="nav-brand" href="#inicio">FJCM / CV</a>
+    <div class="nav-links">
+      <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#habilidades">Habilidades</a><a href="#educacion">Educación</a>
+      <button type="button" id="print-cv">Imprimir / PDF</button>
+    </div>
+  </nav>
   <main class="cv">
 
-    <header>
+    <header id="inicio"><p class="eyebrow">Currículum profesional</p>
       <h1>Francisco Javier Cervantes Mendieta</h1>
       <h2>Analista de Datos | Desarrollo de Automatizaciones | Python y SQL</h2>
       <p class="contact">
@@ -23,7 +27,7 @@
           <span class="icon-circle">
             <i class="fa-solid fa-envelope"></i>
           </span>
-          elavat.9000@gmail.com
+          <a href="mailto:elavat.9000@gmail.com">elavat.9000@gmail.com</a>
         </span>
 
         <span class="contact-item">
@@ -49,8 +53,7 @@
       </p>
     </header>
 
-    <section>
-      <h3>Perfil</h3>
+    <section id="perfil"><h3><i class="fa-solid fa-user" aria-hidden="true"></i> Perfil profesional</h3>
       <p>
         Analista de datos y desarrollador de automatizaciones con experiencia en UTEL desde diciembre de 2023.
         Desarrollo pipelines ETL, reportes e integraciones con Python, SQL y APIs REST para consolidar información
@@ -60,28 +63,9 @@
       </p>
     </section>
 
-    <section class="skills">
-      <h3>Skills</h3>
 
-      <section>
-        <p><strong>Lenguajes:</strong> Python, SQL, JavaScript, C, C++, Java, Bash (básico)</p>
-        <p><strong>Análisis de Datos:</strong> Pandas, NumPy, ETL, EDA, Limpieza y Transformación de Datos, Feature Engineering</p>
-        <p><strong>Visualización:</strong> Matplotlib, Power BI (básico), Dashboards Ejecutivos, KPIs Operativos, Performance y Ventas</p>
-        <p><strong>Machine Learning:</strong> Scikit-learn, Modelos Supervisados, Clasificación, Regresión, Validación de Modelos</p>
-        <p><strong>Bases de Datos:</strong> MySQL, PostgreSQL, Manejo de Datasets</p>
-        <p><strong>Backend:</strong> Django, Node.js, APIs REST, Integración de Servicios, Automatización Backend</p>
-        <p><strong>Frontend:</strong> HTML5, CSS3, Astro, TailwindCSS, Vite</p>
-        <p><strong>Automatización:</strong> Python, Selenium, Playwright, Web Scraping, Pipelines de tareas automatizadas con Python iniciados desde CMD, Reportes Excel y CSV con OpenPyXL, Manejo de Procesos, Logs, Timeouts, Recuperación de Errores</p>
-        <p><strong>APIs e Integraciones:</strong> Google Drive API, Google Sheets API, Google Apps Script, Telegram API, Integración con WhatsApp, Google Chat Webhooks, Autenticación de APIs, Procesamiento de JSON</p>
-        <p><strong>Plataformas:</strong> InConcert (personalización de formularios e integraciones), Oracle APEX, AWS (fundamentos), Docker (básico), Linux</p>
-        <p><strong>Herramientas:</strong> Git, GitHub, VS Code, Jupyter Notebook, Postman, Chrome DevTools, npm, ClickUp, Jira, Trello, Figma</p>
-        <p><strong>Terminal y Línea de Comandos:</strong> Bash (básico), Navegación y Manipulación de Archivos, Búsquedas con grep y find, Redirecciones y Encadenamiento de Comandos</p>
-        <p><strong>Metodologías:</strong> Trabajo Ágil, Resolución de Problemas, Desarrollo Orientado a Datos</p>
-    </section>
-    </section>
 
-    <section>
-      <h3>Experiencia</h3>
+    <section id="experiencia"><h3><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experiencia profesional</h3>
 
       <!-- Universidad Utel -->
       <div class="job">
@@ -177,8 +161,27 @@
       </div>
     </section>
 
-    <section>
-      <h3>Educación</h3>
+        <section class="skills" id="habilidades">
+      <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Habilidades técnicas</h3>
+
+      <div class="skills-grid">
+        <p><strong>Lenguajes:</strong> Python, SQL, JavaScript, C, C++, Java, Bash (básico)</p>
+        <p><strong>Análisis de Datos:</strong> Pandas, NumPy, ETL, EDA, Limpieza y Transformación de Datos, Feature Engineering</p>
+        <p><strong>Visualización:</strong> Matplotlib, Power BI (básico), Dashboards Ejecutivos, KPIs Operativos, Performance y Ventas</p>
+        <p><strong>Machine Learning:</strong> Scikit-learn, Modelos Supervisados, Clasificación, Regresión, Validación de Modelos</p>
+        <p><strong>Bases de Datos:</strong> MySQL, PostgreSQL, Manejo de Datasets</p>
+        <p><strong>Backend:</strong> Django, Node.js, APIs REST, Integración de Servicios, Automatización Backend</p>
+        <p><strong>Frontend:</strong> HTML5, CSS3, Astro, TailwindCSS, Vite</p>
+        <p><strong>Automatización:</strong> Python, Selenium, Playwright, Web Scraping, Pipelines de tareas automatizadas con Python iniciados desde CMD, Reportes Excel y CSV con OpenPyXL, Manejo de Procesos, Logs, Timeouts, Recuperación de Errores</p>
+        <p><strong>APIs e Integraciones:</strong> Google Drive API, Google Sheets API, Google Apps Script, Telegram API, Integración con WhatsApp, Google Chat Webhooks, Autenticación de APIs, Procesamiento de JSON</p>
+        <p><strong>Plataformas:</strong> InConcert (personalización de formularios e integraciones), Oracle APEX, AWS (fundamentos), Docker (básico), Linux</p>
+        <p><strong>Herramientas:</strong> Git, GitHub, VS Code, Jupyter Notebook, Postman, Chrome DevTools, npm, ClickUp, Jira, Trello, Figma</p>
+        <p><strong>Terminal y Línea de Comandos:</strong> Bash (básico), Navegación y Manipulación de Archivos, Búsquedas con grep y find, Redirecciones y Encadenamiento de Comandos</p>
+        <p><strong>Metodologías:</strong> Trabajo Ágil, Resolución de Problemas, Desarrollo Orientado a Datos</p>
+    </div>
+    </section>
+
+    <section id="educacion"><h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Educación</h3>
 
       <div class="job">
         <div class="job-header">
@@ -186,8 +189,7 @@
           <span>01/2025 – 12/2025</span>
         </div>
         <div class="job-sub">Programa de formación en tecnología</div>
-        <ul>
-        </ul>
+        
       </div>
 
       <div class="job">
@@ -208,7 +210,7 @@
     </section>
 
     <section>
-      <h3>Formaciones y Cursos</h3>
+      <h3><i class="fa-solid fa-award" aria-hidden="true"></i> Formación y certificaciones</h3>
 
       <div class="job">
         <div class="job-header">
@@ -284,7 +286,7 @@
     </section>
 
     <section>
-      <h3>Idiomas</h3>
+      <h3><i class="fa-solid fa-language" aria-hidden="true"></i> Idiomas</h3>
       <div class="languages">
         <span>Español</span>
         <span>Inglés</span>
@@ -293,5 +295,6 @@
     </section>
 
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

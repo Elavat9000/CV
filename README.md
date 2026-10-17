@@ -20,7 +20,7 @@ Certificado como **Oracle Cloud Infrastructure Foundations Associate**.
 
 - **HTML5**
 - **CSS3**
-- **Google Fonts (Inter)**
+- **Tipografía de sistema (Segoe UI, Roboto, Helvetica Neue o Arial)**
 - **Font Awesome**
 - Diseño responsive (mobile-first)
 
@@ -181,3 +181,13 @@ Contar con un **CV web profesional**, fácil de compartir, editable y publicable
 ---
 
 ⭐ Si este proyecto te sirve como referencia, no olvides dejar una estrella.
+
+## Presentación del CV
+
+- Navegación por perfil, experiencia, habilidades y educación.
+- Experiencia profesional antes de las habilidades técnicas.
+- Habilidades en dos columnas en escritorio y una en móvil.
+- Botón para abrir la impresión del navegador y guardar como PDF.
+- Estilos de impresión en tamaño carta.
+
+La presentación toma como referencia la claridad de secciones, los iconos y los acentos de color del [CV de Reuben Smit](https://github.com/Reubix29/Reubix29.github.io/blob/main/cv.md). La implementación HTML/CSS es propia y conserva la información de Francisco.
