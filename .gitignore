@@ -8,8 +8,8 @@
 /build-resumes.mjs
 /output/
 
-# Foto personal: archivo local.
-/assets/foto-perfil.*
+# Foto publicada utilizada por el CV principal.
+!/assets/foto-perfil.jpg
 
 /certificaciones.json
 
